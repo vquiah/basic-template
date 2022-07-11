@@ -31,19 +31,16 @@ app.use(express.json()) //allows us to read the data
 app.use(cors())
 
 
-//folder structure setup
+//tell server to serve up something
+
+app.get('/', async(req,res)=>{
+    try {
+        res.render('index.ejs')
+    }catch(error){
+        res.status(500).send({message: error.message})
+    }
+})
  
-
-
-
-
-
-
-
-
-
-
-
 
 
 
