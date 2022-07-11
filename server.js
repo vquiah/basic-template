@@ -31,6 +31,8 @@ app.use(express.json()) //allows us to read the data
 app.use(cors())
 
 
+
+
 //tell server to serve up something
 
 app.get('/', async(req,res)=>{
@@ -41,8 +43,6 @@ app.get('/', async(req,res)=>{
     }
 })
  
-
-
 
  app.listen(process.env.PORT || PORT, () => {
         console.log(`Server is running on port localhost:8000`)
